@@ -1,0 +1,61 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;600&display=swap');
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+.floatleft {float:left;}
+.fix {overflow:hidden;display:block;}
+body {
+    background-color: gray;
+    font-family: 'Open Sans', sans-serif;
+}
+.main-content {
+    width: 1920px;
+    margin: auto;
+}
+.main-content > h2{
+    font-size: 5rem;
+    text-transform: uppercase;
+}
+.countdown {
+    background-color: coral;
+} 
+
+.country {
+    overflow: hidden;
+    margin: 2px;
+    width: 234px;
+    padding-left: 50px;
+    text-align: left;
+    background-color: rgb(0, 0, 0);
+    box-shadow: 2px 1px 3px 1px rgb(0 0 0 / 18%);
+    color: rgb(210 255 12);
+    font-weight: bold;
+    font-size: 2rem;
+}
+.country p {
+    margin-right: 2px;
+    float: right;
+    margin-top: -11px;
+    font-size: 1.2rem;
+    font-weight: bold;
+    color: rgb(0, 255, 42);
+    text-align: left;
+}
+.country h6 {
+    color:white;
+    margin-top: -11px;
+    float: left;
+    width: 100px;
+}
+#flag {
+    position: absolute;
+    height: 62px;
+    width: 50px;
+    margin-left: -50px;
+    padding: 3px;
+}
+.eighteen {
+    margin-top: 63px;
+}

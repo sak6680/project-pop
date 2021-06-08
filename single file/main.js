@@ -1,0 +1,455 @@
+const eidulfitr = "6/3/2021";
+const chinaDiv = document.getElementById('china');
+const indiaDiv = document.getElementById('india');
+const USADiv = document.getElementById('USA');
+const IndonesiaDiv = document.getElementById('Indonesia');
+const PakistanDiv = document.getElementById('Pakistan');
+const BrazilDiv = document.getElementById('Brazil');
+const NigeriaDiv = document.getElementById('Nigeria');
+const BangladeshDiv = document.getElementById('Bangladesh');
+const RussiaDiv = document.getElementById('Russia');
+const MexicoDiv = document.getElementById('Mexico');
+const JapanDiv = document.getElementById('Japan');
+const EthiopiaDiv = document.getElementById('Ethiopia');
+const PhilippinesDiv = document.getElementById('Philippines');
+const EgyptDiv = document.getElementById('Egypt');
+const VietnamDiv = document.getElementById('Vietnam');
+const DRCongoDiv = document.getElementById('DRCongo');
+const TurkeyDiv = document.getElementById('Turkey');
+const GermanyDiv = document.getElementById('Germany');
+const IranDiv = document.getElementById('Iran');
+const ThailandDiv = document.getElementById('Thailand');
+const ukDiv = document.getElementById('uk');
+const FranceDiv = document.getElementById('France');
+const ItalyDiv = document.getElementById('Italy');
+const TanzaniaDiv = document.getElementById('Tanzania');
+const SouthAfricaDiv = document.getElementById('SouthAfrica');
+const MyanmarDiv = document.getElementById('Myanmar');
+const KenyaDiv = document.getElementById('Kenya');
+const SouthKoreaDiv = document.getElementById('SouthKorea');
+const ColombiaDiv = document.getElementById('Colombia');
+const Spainv = document.getElementById('Spain');
+const Ugandav = document.getElementById('Uganda');
+const Argentinav = document.getElementById('Argentina');
+const Algeriav = document.getElementById('Algeria');
+const Sudanv = document.getElementById('Sudan');
+const Ukrainev = document.getElementById('Ukraine');
+const Iraqv = document.getElementById('Iraq');
+const Afghanistanv = document.getElementById('Afghanistan');
+const Polandv = document.getElementById('Poland');
+const Canadav = document.getElementById('Canada');
+const Moroccov = document.getElementById('Morocco');
+const SaudiArabiav = document.getElementById('SaudiArabia');
+const Uzbekistanv = document.getElementById('Uzbekistan');
+const Peruv = document.getElementById('Peru');
+const Angolav = document.getElementById('Angola');
+const Malaysiav = document.getElementById('Malaysia');
+const Mozambiquev = document.getElementById('Mozambique');
+const Ghanav = document.getElementById('Ghana');
+const Yemenv = document.getElementById('Yemen');
+const Nepalv = document.getElementById('Nepal');
+const Venezuelav = document.getElementById('Venezuela');
+const Madagascarv = document.getElementById('Madagascar');
+const Cameroonv = document.getElementById('Cameroon');
+const CdIvoirev = document.getElementById('CdIvoire');
+const NorthKoreav = document.getElementById('NorthKorea');
+const Australiav = document.getElementById('Australia');
+const Nigerv = document.getElementById('Niger');
+const Taiwanv = document.getElementById('Taiwan');
+const SriLankav = document.getElementById('SriLanka');
+const BurkinaFasov = document.getElementById('BurkinaFaso');
+const Maliv = document.getElementById('Mali');
+const Romaniav = document.getElementById('Romania');
+const Malawiv = document.getElementById('Malawi');
+const Chilev = document.getElementById('Chile');
+const Kazakhstanv = document.getElementById('Kazakhstan');
+const Zambiav = document.getElementById('Zambia');
+const Guatemalav = document.getElementById('Guatemala');
+const Ecuadorv = document.getElementById('Ecuador');
+const Syriav = document.getElementById('Syria');
+const Netherlandsv = document.getElementById('Netherlands');
+const Senegalv = document.getElementById('Senegal');
+const Cambodiav = document.getElementById('Cambodia');
+const Chadv = document.getElementById('Chad');
+const Somaliav = document.getElementById('Somalia');
+const Zimbabwev = document.getElementById('Zimbabwe');
+const Guineav = document.getElementById('Guinea');
+const Rwandav = document.getElementById('Rwanda');
+const Beninv = document.getElementById('Benin');
+const Burundiv = document.getElementById('Burundi');
+const Tunisiav = document.getElementById('Tunisia');
+const Boliviav = document.getElementById('Bolivia');
+const Belgiumv = document.getElementById('Belgium');
+const Haitiv = document.getElementById('Haiti');
+const Cubav = document.getElementById('Cuba');
+const SouthSudanv = document.getElementById('SouthSudan');
+const DominicanRepublicv = document.getElementById('DominicanRepublic');
+const Czechrv = document.getElementById('Czechr');
+const Greecev = document.getElementById('Greece');
+const Jordanv = document.getElementById('Jordan');
+const Portugalv = document.getElementById('Portugal');
+const Azerbaijanv = document.getElementById('Azerbaijan');
+const Swedenv = document.getElementById('Sweden');
+const Hondurasv = document.getElementById('Honduras');
+const UAEv = document.getElementById('UAE');
+const Hungaryv = document.getElementById('Hungary');
+const Tajikistanv = document.getElementById('Tajikistan');
+const Belarusv = document.getElementById('Belarus');
+const Austriav = document.getElementById('Austria');
+const PNGuineav = document.getElementById('PNGuinea');
+const Serbiav = document.getElementById('Serbia');
+const Israelv = document.getElementById('Israel');
+const Switzerlandv = document.getElementById('Switzerland');
+const Togov = document.getElementById('Togo');
+const SLeonev = document.getElementById('SLeone');
+const HongKongv = document.getElementById('HongKong');
+const Laosv = document.getElementById('Laos');
+const Paraguayv = document.getElementById('Paraguay');
+const Bulgariav = document.getElementById('Bulgaria');
+const Libyav = document.getElementById('Libya');
+const Lebanonv = document.getElementById('Lebanon');
+const Nicaraguav = document.getElementById('Nicaragua');
+const Kyrgyzstanv = document.getElementById('Kyrgyzstan');
+const ElSalvadorv = document.getElementById('ElSalvador');
+const Turkmenistanv = document.getElementById('Turkmenistan');
+const Singaporev = document.getElementById('Singapore');
+const Denmarkv = document.getElementById('Denmark');
+const Finlandv = document.getElementById('Finland');
+const Congov = document.getElementById('Congo');
+const Slovakiav = document.getElementById('Slovakia');
+const Norwayv = document.getElementById('Norway');
+const Omanv = document.getElementById('Oman');
+const Palestinev = document.getElementById('Palestine');
+const CostaRicav = document.getElementById('CostaRica');
+const Liberiav = document.getElementById('Liberia');
+const Irelandv = document.getElementById('Ireland');
+const CAfricanv = document.getElementById('CAfrican');
+const NewZealandv = document.getElementById('NewZealand');
+const Mauritaniav = document.getElementById('Mauritania');
+const Panamav = document.getElementById('Panama');
+
+
+
+
+
+
+
+
+
+
+
+function countdowntoeid(){
+    const eidday = new Date(eidulfitr);
+    const currentday = new Date();
+
+    const oneseconds = (currentday-eidday)/1000;
+    const threeseconds = (currentday-eidday)/3000;
+    const fiveseconds = (currentday-eidday)/5000;
+    const tenseconds = (currentday-eidday)/10000;
+    const minute = (currentday-eidday)/60000;
+    const twominute = (currentday-eidday)/120000;
+    const threeminute = (currentday-eidday)/180300;
+    const fiveminute = (currentday-eidday)/300100;
+    const tenminute = (currentday-eidday)/450300;
+    const tennnzerominute = (currentday-eidday)/550300;
+	const tennhalfminute = (currentday-eidday)/630000;
+    const twentyminute = (currentday-eidday)/1200400;
+    const twentynhalfminute = (currentday-eidday)/1550400;
+    const sevennhalfminute = (currentday-eidday)/1330300;
+    const thirtyminute = (currentday-eidday)/1800300;
+    const thirtyyminute = (currentday-eidday)/1950300;
+    const thirtyyyminute = (currentday-eidday)/1590300;
+    const thirtyyyyminute = (currentday-eidday)/1630300;
+    const thirtyyyyyminute = (currentday-eidday)/1930000;
+    const thirtyyyyzyminute = (currentday-eidday)/1550000;
+    const thirtyyyyzzyminute = (currentday-eidday)/1888000;
+    
+    const china = Math.floor(fiveseconds) +1444501811;
+    const india = Math.floor(threeseconds)-77070 +1392777285;
+    const USA = Math.floor(tenseconds)-23231 +332817273;
+    const Indonesia = Math.floor(minute)+276250111;
+    const Pakistan = Math.floor(twominute)+224999276;
+    const Brazil = Math.floor(threeminute);
+    const Nigeria = Math.floor(fiveminute);
+    const Bangladesh = Math.floor(tenminute);
+    const Russia = Math.floor(fiveminute);
+    const Mexico = Math.floor(tenminute);
+    const Japan= Math.floor(thirtyminute);
+    const Ethiopia= Math.floor(fiveminute);
+    const Philippines= Math.floor(thirtyminute);
+    const Egypt= Math.floor(tenminute);
+    const Vietnam= Math.floor(tenminute);
+    const DRCongo= Math.floor(threeminute);
+    const Turkey= Math.floor(twominute);
+    const Germany= Math.floor(fiveminute);
+    const Iran= Math.floor(twominute);
+    const Thailand= Math.floor(threeminute);
+    const uk= Math.floor(threeminute);
+    const France= Math.floor(threeminute);
+    const Italy= Math.floor(tenminute);
+    const Tanzania= Math.floor(twentynhalfminute);
+    const SouthAfrica= Math.floor(tennnzerominute);
+    const Myanmar= Math.floor(twentyminute);
+    const Kenya= Math.floor(thirtyminute);
+    const SouthKorea= Math.floor(tenminute);
+    const Colombia= Math.floor(twentynhalfminute);
+    const Spain= Math.floor(thirtyyminute);
+    const Uganda= Math.floor(tenminute);
+    const Argentina= Math.floor(thirtyyyminute);
+    const Algeria= Math.floor(thirtyyyyminute);
+    const Sudan= Math.floor(tennnzerominute);
+    const Ukraine= Math.floor(thirtyminute);
+    const Iraq= Math.floor(thirtyyyminute);
+    const Afghanistan= Math.floor(thirtyminute);
+    const Poland= Math.floor(tenminute);
+    const Canada= Math.floor(twentyminute);
+    const Morocco= Math.floor(thirtyyyyzyminute);
+    const SaudiArabia= Math.floor(twentynhalfminute);
+    const Uzbekistan= Math.floor(thirtyyminute);
+    const Peru= Math.floor(tennnzerominute);
+    const Angola= Math.floor(thirtyminute);
+    const Malaysia= Math.floor(tenminute);
+    const Mozambique= Math.floor(thirtyyyyminute);
+    const Ghana= Math.floor(thirtyyyminute);
+    const Yemen= Math.floor(thirtyminute);
+    const Nepal= Math.floor(thirtyyyyyminute);
+    const Venezuela= Math.floor(thirtyyyyzzyminute);
+    const Madagascar= Math.floor(thirtyyyyzyminute);
+    const Cameroon= Math.floor(twentynhalfminute);
+    const CdIvoire= Math.floor(tenminute);
+    const NorthKorea= Math.floor(thirtyyyyminute);
+    const Australia= Math.floor(twentyminute);
+    const Niger= Math.floor(sevennhalfminute);
+    const Taiwan= Math.floor(thirtyminute);
+	const SriLanka = Math.floor(tennnzerominute);
+	const BurkinaFaso = Math.floor(thirtyyminute);
+	const Mali = Math.floor(thirtyyyminute);
+	const Romania = Math.floor(thirtyminute);
+	const Malawi = Math.floor(tenminute);
+	const Chile = Math.floor(thirtyyyyzyminute);
+	const Kazakhstan = Math.floor(sevennhalfminute);
+	const Zambia = Math.floor(thirtyyyminute);
+	const Guatemala = Math.floor(thirtyyyyminute);
+	const Ecuador = Math.floor(twentynhalfminute);
+	const Syria = Math.floor(tennnzerominute);
+	const Netherlands = Math.floor(thirtyyyyyminute);
+	const Senegal = Math.floor(thirtyminute);
+	const Cambodia = Math.floor(tenminute);
+	const Chad = Math.floor(sevennhalfminute);
+	const Somalia = Math.floor(thirtyminute);
+	const Zimbabwe = Math.floor(thirtyyminute);
+	const Guinea = Math.floor(twentyminute);
+	const Rwanda = Math.floor(twentynhalfminute);
+	const Benin = Math.floor(twentyminute);
+	const Burundi = Math.floor(sevennhalfminute);
+	const Tunisia = Math.floor(thirtyyyyzyminute);
+	const Bolivia = Math.floor(sevennhalfminute);
+	const Belgium = Math.floor(tenminute);
+	const Haiti = Math.floor(thirtyyyminute);
+	const Cuba = Math.floor(thirtyminute);
+	const SouthSudan = Math.floor(tennnzerominute);
+	const DominicanRepublic = Math.floor(thirtyyminute);
+	const Czechr = Math.floor(thirtyyyyminute);
+	const Greece = Math.floor(thirtyminute);
+	const Jordan = Math.floor(twentynhalfminute);
+	const Portugal = Math.floor(tenminute);
+	const Azerbaijan = Math.floor(thirtyyyyyminute);
+	const Sweden = Math.floor(thirtyminute);
+	const Honduras = Math.floor(twentyminute);
+	const UAE = Math.floor(twentyminute);
+	const Hungary = Math.floor(thirtyyyminute);
+	const Tajikistan = Math.floor(sevennhalfminute);
+	const Belarus = Math.floor(sevennhalfminute);
+	const Austria = Math.floor(thirtyminute);
+	const PNGuinea = Math.floor(thirtyyyyzzyminute);
+	const Serbia = Math.floor(thirtyyyyminute);
+	const Israel = Math.floor(tennnzerominute);
+	const Switzerland = Math.floor(thirtyyyminute);
+	const Togo = Math.floor(thirtyyyyzyminute);
+	const SLeone = Math.floor(thirtyminute);
+	const HongKong = Math.floor(thirtyyminute);
+	const Laos = Math.floor(twentyminute);
+	const Paraguay = Math.floor(thirtyminute);
+	const Bulgaria = Math.floor(twentynhalfminute);
+	const Libya = Math.floor(sevennhalfminute);
+	const Lebanon = Math.floor(thirtyminute);
+	const Nicaragua = Math.floor(thirtyyyminute);
+	const Kyrgyzstan = Math.floor(tennnzerominute);
+	const ElSalvador = Math.floor(twentyminute);
+	const Turkmenistan = Math.floor(thirtyminute);
+	const Singapore = Math.floor(thirtyyyyyminute);
+	const Denmark = Math.floor(thirtyyyyminute);
+	const Finland = Math.floor(twentyminute);
+	const Congo = Math.floor(thirtyminute);
+	const Slovakia = Math.floor(thirtyyyminute);
+	const Norway = Math.floor(thirtyyminute);
+	const Oman = Math.floor(twentyminute);
+	const Palestine = Math.floor(twentynhalfminute);
+	const CostaRica = Math.floor(thirtyminute);
+	const Liberia = Math.floor(sevennhalfminute);
+	const Ireland = Math.floor(tennnzerominute);
+	const CAfrican = Math.floor(thirtyminute);
+	const NewZealand = Math.floor(sevennhalfminute);
+	const Mauritania = Math.floor(twentyminute);
+	const Panama = Math.floor(thirtyminute);
+
+
+
+
+
+
+
+
+    
+
+
+
+
+
+
+    chinaDiv.innerHTML = china;
+    indiaDiv.innerHTML = india;
+    USADiv.innerHTML = USA;
+    IndonesiaDiv.innerHTML = Indonesia;
+    PakistanDiv.innerHTML = Pakistan;
+    BrazilDiv.innerHTML = Brazil;
+    NigeriaDiv.innerHTML = Nigeria;
+    BangladeshDiv.innerHTML = Bangladesh;
+    RussiaDiv.innerHTML = Russia;
+    MexicoDiv.innerHTML = Mexico;
+    JapanDiv.innerHTML = Japan;
+    EthiopiaDiv.innerHTML = Ethiopia;
+    PhilippinesDiv.innerHTML = Philippines;
+    EgyptDiv.innerHTML = Egypt;
+    VietnamDiv.innerHTML = Vietnam;
+    DRCongoDiv.innerHTML = DRCongo;
+    TurkeyDiv.innerHTML = Turkey;
+    GermanyDiv.innerHTML = Germany;
+    IranDiv.innerHTML = Iran;
+    ThailandDiv.innerHTML = Thailand;
+    ukDiv.innerHTML = uk;
+    FranceDiv.innerHTML = France;
+    ItalyDiv.innerHTML = Italy;
+    TanzaniaDiv.innerHTML = Tanzania;
+    SouthAfricaDiv.innerHTML = SouthAfrica;
+    MyanmarDiv.innerHTML = Myanmar;
+    KenyaDiv.innerHTML = Kenya;
+    SouthKoreaDiv.innerHTML = SouthKorea;
+    ColombiaDiv.innerHTML = Colombia;
+    Spainv.innerHTML = Spain;
+    Ugandav.innerHTML = Uganda;
+    Argentinav.innerHTML = Argentina;
+    Algeriav.innerHTML = Algeria;
+    Sudanv.innerHTML = Sudan;
+    Ukrainev.innerHTML = Ukraine;
+    Iraqv.innerHTML = Iraq;
+    Afghanistanv.innerHTML = Afghanistan;
+    Polandv.innerHTML = Poland;
+    Canadav.innerHTML = Canada;
+    Moroccov.innerHTML = Morocco;
+    SaudiArabiav.innerHTML = SaudiArabia;
+    Uzbekistanv.innerHTML = Uzbekistan;
+    Peruv.innerHTML = Peru;
+    Angolav.innerHTML = Angola;
+    Malaysiav.innerHTML = Malaysia;
+    Mozambiquev.innerHTML = Mozambique;
+    Ghanav.innerHTML = Ghana;
+    Yemenv.innerHTML = Yemen;
+    Nepalv.innerHTML = Nepal;
+    Venezuelav.innerHTML = Venezuela;
+    Madagascarv.innerHTML = Madagascar;
+    Cameroonv.innerHTML = Cameroon;
+    CdIvoirev.innerHTML = CdIvoire;
+    NorthKoreav.innerHTML = NorthKorea;
+    Australiav.innerHTML = Australia;
+    Nigerv.innerHTML = Niger;
+    Taiwanv.innerHTML = Taiwan;
+	SriLankav.innerHTML = SriLanka;
+	BurkinaFasov.innerHTML = BurkinaFaso;
+	Maliv.innerHTML = Mali;
+	Romaniav.innerHTML = Romania;
+	Malawiv.innerHTML = Malawi;
+	Chilev.innerHTML = Chile;
+	Kazakhstanv.innerHTML = Kazakhstan;
+	Zambiav.innerHTML = Zambia;
+	Guatemalav.innerHTML = Guatemala;
+	Ecuadorv.innerHTML = Ecuador;
+	Syriav.innerHTML = Syria;
+	Netherlandsv.innerHTML = Netherlands;
+	Senegalv.innerHTML = Senegal;
+	Cambodiav.innerHTML = Cambodia;
+	Chadv.innerHTML = Chad;
+	Somaliav.innerHTML = Somalia;
+	Zimbabwev.innerHTML = Zimbabwe;
+	Guineav.innerHTML = Guinea;
+	Rwandav.innerHTML = Rwanda;
+	Beninv.innerHTML = Benin;
+	Burundiv.innerHTML = Burundi;
+	Tunisiav.innerHTML = Tunisia;
+	Boliviav.innerHTML = Bolivia;
+	Belgiumv.innerHTML = Belgium;
+	Haitiv.innerHTML = Haiti;
+	Cubav.innerHTML = Cuba;
+	SouthSudanv.innerHTML = SouthSudan;
+	DominicanRepublicv.innerHTML = DominicanRepublic;
+	Czechrv.innerHTML = Czechr;
+	Greecev.innerHTML = Greece;
+	Jordanv.innerHTML = Jordan;
+	Portugalv.innerHTML = Portugal;
+	Azerbaijanv.innerHTML = Azerbaijan;
+	Swedenv.innerHTML = Sweden;
+	Hondurasv.innerHTML = Honduras;
+	UAEv.innerHTML = UAE;
+	Hungaryv.innerHTML = Hungary;
+	Tajikistanv.innerHTML = Tajikistan;
+	Belarusv.innerHTML = Belarus;
+	Austriav.innerHTML = Austria;
+	PNGuineav.innerHTML = PNGuinea;
+	Serbiav.innerHTML = Serbia;
+	Israelv.innerHTML = Israel;
+	Switzerlandv.innerHTML = Switzerland;
+	Togov.innerHTML = Togo;
+	SLeonev.innerHTML = SLeone;
+	HongKongv.innerHTML = HongKong;
+	Laosv.innerHTML = Laos;
+	Paraguayv.innerHTML = Paraguay;
+	Bulgariav.innerHTML = Bulgaria;
+	Libyav.innerHTML = Libya;
+	Lebanonv.innerHTML = Lebanon;
+	Nicaraguav.innerHTML = Nicaragua;
+	Kyrgyzstanv.innerHTML = Kyrgyzstan;
+	ElSalvadorv.innerHTML = ElSalvador;
+	Turkmenistanv.innerHTML = Turkmenistan;
+	Singaporev.innerHTML = Singapore;
+	Denmarkv.innerHTML = Denmark;
+	Finlandv.innerHTML = Finland;
+	Congov.innerHTML = Congo;
+	Slovakiav.innerHTML = Slovakia;
+	Norwayv.innerHTML = Norway;
+	Omanv.innerHTML = Oman;
+	Palestinev.innerHTML = Palestine;
+	CostaRicav.innerHTML = CostaRica;
+	Liberiav.innerHTML = Liberia;
+	Irelandv.innerHTML = Ireland;
+	CAfricanv.innerHTML = CAfrican;
+	NewZealandv.innerHTML = NewZealand;
+	Mauritaniav.innerHTML = Mauritania;
+	Panamav.innerHTML = Panama;
+
+
+
+
+
+
+
+    
+
+
+
+
+
+    console.log(china, india, USA, Indonesia, Pakistan, Brazil, Nigeria, Bangladesh, Russia);
+}
+
+countdowntoeid();
+setInterval(countdowntoeid, 1000);
